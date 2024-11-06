@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Me a Coffee</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    #paypal-button {
+      background-color: #0070ba;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    #paypal-button:hover {
+      background-color: #003a6c;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var paypalButton = document.getElementById('paypal-button');
+      paypalButton.addEventListener('click', function() {
+        alert('You can now send payment to my PayPal account: myusername');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Buy Me a Coffee</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Receive USDT on Binance</h2>
+      <img src="/api/placeholder/200/200" alt="USDT QR Code">
+      <p>Scan this QR code to send USDT to my Binance wallet.</p>
+    </section>
+    <section>
+      <h2>Receive Payment to Vietnamese Bank Account</h2>
+      <img src="/api/placeholder/200/200" alt="Vietnam Bank QR Code">
+      <p>Scan this QR code to send payment to my Vietnamese bank account.</p>
+    </section>
+    <section>
+      <h2>Receive Payment via PayPal</h2>
+      <p>You can also send payment via PayPal using my username: <strong>myusername</strong></p>
+      <button id="paypal-button">Send Payment</button>
+    </section>
+  </main>
+</body>
+</html>
